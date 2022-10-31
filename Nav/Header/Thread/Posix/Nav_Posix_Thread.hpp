@@ -1,8 +1,8 @@
 #ifndef __NAV_POSIX_THREAD_HPP__
 #define __NAV_POSIX_THREAD_HPP__
 
-#include <Api/Nav_Api.h>
-#include <Type/Nav_Value_Type.h>
+#include <Api/Nav_Api.hpp>
+#include <Type/Nav_Value_Type.hpp>
 #include <Type/Nav_Function_Pointer.hpp>
 
 class NAV_API PosixThread

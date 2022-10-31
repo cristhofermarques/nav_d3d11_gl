@@ -1,9 +1,9 @@
 #ifndef __NAV_LOG_HPP__
 #define __NAV_LOG_HPP__
 
-#include <Api/Nav_Api.h>
+#include <Api/Nav_Api.hpp>
 #include <UI/Console/Nav_Console.hpp>
-#include <Type/Nav_Value_Type.h>
+#include <Type/Nav_Value_Type.hpp>
 
 #define FLOAT_LOG_FORMAT "%f "
 #define DOUBLE_LOG_FORMAT "%lf "

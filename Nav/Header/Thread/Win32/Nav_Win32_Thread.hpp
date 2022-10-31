@@ -1,8 +1,8 @@
 #ifndef __NAV_WIN32_THREAD_HPP__
 #define __NAV_WIN32_THREAD_HPP__
 
-#include <Api/Nav_Api.h>
-#include <Type/Nav_Value_Type.h>
+#include <Api/Nav_Api.hpp>
+#include <Type/Nav_Value_Type.hpp>
 
 class NAV_API Win32Thread
 {

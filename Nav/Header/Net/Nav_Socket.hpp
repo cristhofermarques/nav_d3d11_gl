@@ -1,7 +1,7 @@
 #ifndef __NAV_SOCKET_HPP__
 #define __NAV_SOCKET_HPP__
 
-#include <Api/Nav_Api.h>
+#include <Api/Nav_Api.hpp>
 #include <Api/Nav_Abstract_Platform.hpp>
 
 class NAV_API Socket

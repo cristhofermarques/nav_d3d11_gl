@@ -1,4 +1,4 @@
-#include <UI/Window/Nav_Window.h>
+#include <UI/Window/Nav_Window.hpp>
 #include <Windows.h>
 
 LPCSTR NavWindowClassName = (LPCSTR)"nav_wnd_class";
