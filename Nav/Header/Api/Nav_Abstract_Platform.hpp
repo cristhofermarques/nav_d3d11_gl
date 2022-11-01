@@ -10,9 +10,9 @@
 #define IMPLEMENT_PLATFORM_PART_UNION(type) union type::PlatformPart
 
 #define DECLARE_PLATFORM_PART_GET_SIZE() static Size GetSize()
-#define IMPLEMENT_PLATFORM_PART_GET_SIZE(type) Size type::GetSize(){return sizeof(type) + sizeof(PlatformPart);}
+#define IMPLEMENT_PLATFORM_PART_GET_SIZE(type) Size type::GetSize(){return sizeof(type) + sizeof(type::PlatformPart);}
 
 #define DECLARE_GET_PLATFORM_PART() PlatformPart* GetPlatformPart()
-#define IMPLEMENT_GET_PLATFORM_PART(type) type::PlatformPart* type::GetPlatformPart(){return (PlatformPart*)(this + 1);}
+#define IMPLEMENT_GET_PLATFORM_PART(type) type::PlatformPart* type::GetPlatformPart(){return (type::PlatformPart*)(this + 1);}
 
 #endif

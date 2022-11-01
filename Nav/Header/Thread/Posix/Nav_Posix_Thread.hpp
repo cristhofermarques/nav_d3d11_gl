@@ -2,22 +2,23 @@
 #define __NAV_POSIX_THREAD_HPP__
 
 #include <Api/Nav_Api.hpp>
+#include <Api/Nav_Abstract_Platform.hpp>
 #include <Type/Nav_Value_Type.hpp>
 #include <Type/Nav_Function_Pointer.hpp>
 
 class NAV_API PosixThread
 {
     public :
-    struct PlatformPart;
+    DECLARE_PLATFORM_PART();
+    DECLARE_GET_PLATFORM_PART();
+    DECLARE_PLATFORM_PART_GET_SIZE();
     typedef FUNCTION_POINTER_DEFINE(void*, ThreadCall, void*);
 
     public :
-    PlatformPart* GetPlatformPart();
     void Join();
     Bool Cancel();
 
     public :
-    static Size GetSize();
     static Bool Create(ThreadCall call, void* args, PosixThread* thread);
 };
 

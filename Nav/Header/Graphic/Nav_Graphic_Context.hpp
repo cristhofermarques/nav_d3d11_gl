@@ -26,6 +26,8 @@ class NAV_API GraphicContext
     public :
     static Bool Create(ApiType type, GraphicContext* gfxCtx);
     static Bool Destroy(GraphicContext* gfxCtx);
+
+    static Bool SupportD3D11();
 };
 
 #endif

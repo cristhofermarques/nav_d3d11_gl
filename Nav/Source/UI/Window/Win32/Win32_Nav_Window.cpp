@@ -1,14 +1,12 @@
 #include <UI/Window/Nav_Window.hpp>
-#include <Windows.h>
+#include <UI/Window/Win32/Win32_Nav_Window_Platform_Part.hpp>
+#include <windows.h>
 
 LPCSTR NavWindowClassName = (LPCSTR)"nav_wnd_class";
 const UINT NAV_CLOSE_WINDOW = WM_USER + 1;
 
-struct Window::PlatformPart
-{
-    HWND hWnd;
-    HDC hDc;
-};
+IMPLEMENT_GET_PLATFORM_PART(Window);
+IMPLEMENT_PLATFORM_PART_GET_SIZE(Window);
 
 LRESULT CALLBACK NavWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -22,11 +20,6 @@ LRESULT CALLBACK NavWindowProcedure(HWND hWnd, UINT msg, WPARAM wParam, LPARAM l
 
     return DefWindowProc(hWnd, msg, wParam, lParam);
 
-}
-
-Window::PlatformPart* Window::GetPlatformPart()
-{
-    return (PlatformPart*)(this + 1);
 }
 
 Bool Window::UpdateEvents()
@@ -60,12 +53,26 @@ void Window::SetCanClose(Bool state)
     this->_canClose = state;
 }
 
-Size Window::GetSize()
+Window::WindowMode Window::GetMode()
 {
-    return sizeof(Window) + sizeof(Window::PlatformPart);
+    return this->_mode;
 }
 
-Bool Window::Create(char* title, int width, int height, Window::WindowType type, Window* wnd)
+Int2 Window::GetClientSize()
+{
+    PlatformPart* platPart = this->GetPlatformPart();
+    if(platPart == NullPtr){return {-1, -1};}
+
+    RECT rect;
+    if(!GetClientRect(platPart->hWnd, &rect)){return {-1, -1};}
+
+    Int2 size = NullStruct;
+    size.x = rect.right - rect.left;
+    size.y = rect.bottom - rect.top;
+    return size;
+}
+
+Bool Window::Create(char* title, int width, int height, Window::WindowMode mode, Window* wnd)
 {
     if(wnd == NullPtr){return False;}
 
@@ -93,11 +100,11 @@ Bool Window::Create(char* title, int width, int height, Window::WindowType type,
         }
     }
 
-    DWORD wndStyle = WS_OVERLAPPEDWINDOW;
-    switch(type)
+    DWORD wndStyle = WS_OVERLAPPED | WS_SYSMENU;
+    switch(mode)
     {
         case Windowed :
-            wndStyle = WS_OVERLAPPEDWINDOW;
+            wndStyle = WS_OVERLAPPED | WS_SYSMENU;
         break;
 
         case Borderless :
@@ -119,6 +126,7 @@ Bool Window::Create(char* title, int width, int height, Window::WindowType type,
 
     HDC hDc = GetWindowDC(hWnd);
     wnd->_canClose = True;
+    wnd->_mode = mode;
     wnd->GetPlatformPart()->hWnd = hWnd;
     wnd->GetPlatformPart()->hDc = hDc;
 

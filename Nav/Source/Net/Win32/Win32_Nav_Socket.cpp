@@ -1,4 +1,5 @@
 #include <Net/Nav_Socket.hpp>
+#include <Net/Win32/Win32_Nav_Socket_Platform_Part.hpp>
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
 #include <winsock2.h>
@@ -6,6 +7,9 @@
 Bool initialized = False;
 WSADATA wsaData = NullStruct;
 UInt32 socketCount = 0U;
+
+IMPLEMENT_PLATFORM_PART_GET_SIZE(Socket);
+IMPLEMENT_GET_PLATFORM_PART(Socket);
 
 Bool Init()
 {
@@ -24,14 +28,6 @@ Bool End()
 
     return !initialized;
 }
-
-IMPLEMENT_PLATFORM_PART(Socket)
-{
-    SOCKET socket;
-};
-
-IMPLEMENT_PLATFORM_PART_GET_SIZE(Socket);
-IMPLEMENT_GET_PLATFORM_PART(Socket);
 
 Bool Socket::Create(Socket* outSocket)
 {

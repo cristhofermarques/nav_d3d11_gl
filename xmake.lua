@@ -59,9 +59,11 @@ target("nav")
 
         end
 
+        -- D3D Support
+        add_files("Nav/Source/Graphic/D3D11/Win32/*.cpp")
+        
         add_files("Nav/Source/UI/Console/Win32/*.cpp")
         add_files("Nav/Source/UI/Window/Win32/*.cpp")
-        add_files("Nav/Source/Graphic/D3D11/Win32/*.cpp")
         add_files("Nav/Source/Graphic/Win32/*.cpp")
 
         add_links("user32")

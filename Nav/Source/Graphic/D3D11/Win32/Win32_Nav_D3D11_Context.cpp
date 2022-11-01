@@ -1,6 +1,9 @@
 #include <Graphic/D3D11/Nav_D3D11_Context.hpp>
 #include <Graphic/D3D11/Win32/Win32_Nav_D3D11_Context_Platform_Part.hpp>
 
+IMPLEMENT_GET_PLATFORM_PART(D3D11Context);
+IMPLEMENT_PLATFORM_PART_GET_SIZE(D3D11Context);
+
 Bool D3D11Context::Create(D3D11Context* ctx)
 {
     if(ctx == NullPtr){return False;}
