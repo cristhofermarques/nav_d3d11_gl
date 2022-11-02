@@ -36,9 +36,11 @@ target("nav")
     -- Source Platform Windows
     if is_os("windows") then
 
-        add_defines("NAV_BUILD_PLATFORM_WINDOWS")
+        add_defines("NAV_BUILD_OS_WINDOWS")
     
         if is_plat("windows") then
+
+            add_defines("NAV_BUILD_PLATFORM_WINDOWS")
 
             add_defines("NAV_BUILD_THREAD_WIN32")
 
@@ -48,6 +50,8 @@ target("nav")
             add_links("ws2_32")
 
         elseif is_plat("mingw") then
+
+            add_defines("NAV_BUILD_PLATFORM_MINGW")
 
             set_prefixname("")
 
@@ -64,6 +68,7 @@ target("nav")
         
         add_files("Nav/Source/UI/Console/Win32/*.cpp")
         add_files("Nav/Source/UI/Window/Win32/*.cpp")
+        
         add_files("Nav/Source/Graphic/Win32/*.cpp")
 
         add_links("user32")
