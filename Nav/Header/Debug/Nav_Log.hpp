@@ -3,7 +3,7 @@
 
 #include <Api/Nav_Api.hpp>
 #include <UI/Console/Nav_Console.hpp>
-#include <Type/Nav_Value_Type.hpp>
+#include <Type/Primitive/Nav_Value_Type.hpp>
 
 #define FLOAT_LOG_FORMAT "%f "
 #define DOUBLE_LOG_FORMAT "%lf "
@@ -17,20 +17,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define LOG_MSG(log_format, logPrintColor, ...) \
+#define LOG_ERROR(msg) \
+    Console::SetPrintColor(Console::PrintColor::Red); \
+    printf("ERROR %s %s() %d : " STRING_LOG_FORMAT "\n", __FILE__, __FUNCTION__, __LINE__, msg); \
+    Console::SetPrintColor(Console::PrintColor::White);
+
+#define LOG_SUCCESS(msg) \
+    Console::SetPrintColor(Console::PrintColor::Green); \
+    printf("SUCCESS %s %s() %d : " STRING_LOG_FORMAT "\n", __FILE__, __FUNCTION__, __LINE__, msg); \
+    Console::SetPrintColor(Console::PrintColor::White);
+
+#define LOG_INFO(msg) \
+    Console::SetPrintColor(Console::PrintColor::Yellow); \
+    printf("INFO %s %s() %d : " STRING_LOG_FORMAT "\n", __FILE__, __FUNCTION__, __LINE__, msg); \
+    Console::SetPrintColor(Console::PrintColor::White);
+
+#define LOG_MSG(msg) \
+    Console::SetPrintColor(Console::PrintColor::White); \
+    printf("MSG %s %s() %d : " STRING_LOG_FORMAT "\n", __FILE__, __FUNCTION__, __LINE__, msg);
+
+#define LOG(log_format, logPrintColor, ...) \
     Console::SetPrintColor(logPrintColor); \
     printf("LOG %s %s() %d : " log_format "\n", __FILE__, __FUNCTION__, __LINE__, __VA_ARGS__); \
     Console::SetPrintColor(Console::PrintColor::White);
 
-#else // NAV_BUILD_RELEASE
+#else
 
-#define DEBUG_INFO(info_msg)
-#define DEBUG_ERROR(error_msg)
-#define LOG_MSG(log_format, log_print_color, ...)
+#define LOG_SUCCESS(error_msg)
+#define LOG_ERROR(error_msg)
+#define LOG_INFO(info_msg)
+#define LOG_MSG(info_msg)
+#define LOG(log_format, log_print_color, ...)
 
-#define INIT_DEBUG_HISTORY_SAVE(character_capacity)
-#define END_DEBUG_HISTORY_SAVE()
+#endif
 
-#endif // NAV_BUILD_DEBUG
-
-#endif // NAV_DEBUG_H
+#endif

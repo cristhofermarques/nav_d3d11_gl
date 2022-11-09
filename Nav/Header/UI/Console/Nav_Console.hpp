@@ -2,7 +2,7 @@
 #define __NAV_CONSOLE_HPP__
 
 #include <Api/Nav_Api.hpp>
-#include <Type/Nav_Value_Type.hpp>
+#include <Type/Primitive/Nav_Value_Type.hpp>
 
 class NAV_API Console
 {

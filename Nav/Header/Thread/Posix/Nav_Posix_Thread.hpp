@@ -3,8 +3,7 @@
 
 #include <Api/Nav_Api.hpp>
 #include <Api/Nav_Abstract_Platform.hpp>
-#include <Type/Nav_Value_Type.hpp>
-#include <Type/Nav_Function_Pointer.hpp>
+#include "Nav_Type.hpp"
 
 class NAV_API PosixThread
 {

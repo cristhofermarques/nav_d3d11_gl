@@ -3,8 +3,8 @@
 
 #include <Api/Nav_Api.hpp>
 #include <Api/Nav_Abstract_Platform.hpp>
-#include <Type/Nav_Value_Type.hpp>
-#include <Math/Nav_Int2.hpp>
+#include "Nav_Type.hpp"
+#include "Nav_Math.hpp"
 
 class NAV_API Window
 {

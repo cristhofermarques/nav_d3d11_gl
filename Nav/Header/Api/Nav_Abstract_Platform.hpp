@@ -1,7 +1,7 @@
 #ifndef __NAV_ABSTRACT_PLATFORM_HPP__
 #define __NAV_ABSTRACT_PLATFORM_HPP__
 
-#include <Type/Nav_Value_Type.hpp>
+#include "Nav_Type.hpp"
 
 #define DECLARE_PLATFORM_PART() struct PlatformPart
 #define IMPLEMENT_PLATFORM_PART(type) struct type::PlatformPart
@@ -14,5 +14,14 @@
 
 #define DECLARE_GET_PLATFORM_PART() PlatformPart* GetPlatformPart()
 #define IMPLEMENT_GET_PLATFORM_PART(type) type::PlatformPart* type::GetPlatformPart(){return (type::PlatformPart*)(this + 1);}
+
+#define GET_PLATFORM_PART_OR_RETURN(ret) \
+    PlatformPart* platPart = this->GetPlatformPart(); \
+    if(platPart == NullPtr){return ret;}
+
+#define GET_PLATFORM_PART(obj, type, ret) \
+    if(obj == NullPtr){return ret;} \
+    type::PlatformPart* obj##PlatPart = obj->GetPlatformPart(); \
+    if(obj##PlatPart == NullPtr){return ret;}
 
 #endif
