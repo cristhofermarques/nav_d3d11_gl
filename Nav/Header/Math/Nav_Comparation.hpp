@@ -7,6 +7,9 @@
 #define IS_EVEN(n) (((n % 2) == 0) ? True : False)
 #define IS_ODD(n) (((n % 2) > 0) ? True : False)
 
+#define IS_IN_RANGE(n, min, max) ((n >= min && n <= max) ? True : False)
+#define IS_NOT_IN_RANGE(n, min, max) ((n >= min && n <= max) ? False : True)
+
 class NAV_API Math
 {
     public :

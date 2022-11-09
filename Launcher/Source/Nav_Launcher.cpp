@@ -1,5 +1,6 @@
 #include "Nav.hpp"
 #include "Nav_D3D11.hpp"
+#include <Type/Collection/Nav_Stack.hpp>
 // #include "Nav_OpenGL.hpp"
 // #include <Graphic/Type/Image/Nav_Image.hpp>
 
