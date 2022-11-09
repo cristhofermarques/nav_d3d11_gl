@@ -1,41 +1,76 @@
 [
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-Fobuild\\.objs\\launcher\\mingw\\x86_64\\release\\Launcher\\Source\\Nav_Launcher.cpp.obj", "Launcher\\Source\\Nav_Launcher.cpp"],
-  "file": "Launcher\\Source\\Nav_Launcher.cpp"
-},
-{
-  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\Thread\\Nav_Thread.cpp.obj", "Nav\\Source\\Thread\\Nav_Thread.cpp"],
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Thread\\Nav_Thread.cpp.obj", "Nav\\Source\\Thread\\Nav_Thread.cpp"],
   "file": "Nav\\Source\\Thread\\Nav_Thread.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\Thread\\Posix\\Nav_Posix_Thread.cpp.obj", "Nav\\Source\\Thread\\Posix\\Nav_Posix_Thread.cpp"],
-  "file": "Nav\\Source\\Thread\\Posix\\Nav_Posix_Thread.cpp"
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Memory\\Arena\\Nav_Sequential_Arena.cpp.obj", "Nav\\Source\\Memory\\Arena\\Nav_Sequential_Arena.cpp"],
+  "file": "Nav\\Source\\Memory\\Arena\\Nav_Sequential_Arena.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\Thread\\Win32\\Nav_Win32_Thread.cpp.obj", "Nav\\Source\\Thread\\Win32\\Nav_Win32_Thread.cpp"],
-  "file": "Nav\\Source\\Thread\\Win32\\Nav_Win32_Thread.cpp"
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Memory\\Arena\\Nav_String_Arena.cpp.obj", "Nav\\Source\\Memory\\Arena\\Nav_String_Arena.cpp"],
+  "file": "Nav\\Source\\Memory\\Arena\\Nav_String_Arena.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\Graphic\\D3D11\\Win32\\Win32_Nav_D3D11_Context.cpp.obj", "Nav\\Source\\Graphic\\D3D11\\Win32\\Win32_Nav_D3D11_Context.cpp"],
-  "file": "Nav\\Source\\Graphic\\D3D11\\Win32\\Win32_Nav_D3D11_Context.cpp"
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Type\\Text\\Nav_String.cpp.obj", "Nav\\Source\\Type\\Text\\Nav_String.cpp"],
+  "file": "Nav\\Source\\Type\\Text\\Nav_String.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\UI\\Console\\Win32\\Win32_Nav_Console.cpp.obj", "Nav\\Source\\UI\\Console\\Win32\\Win32_Nav_Console.cpp"],
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Graphic\\Type\\Image\\Nav_Image.cpp.obj", "Nav\\Source\\Graphic\\Type\\Image\\Nav_Image.cpp"],
+  "file": "Nav\\Source\\Graphic\\Type\\Image\\Nav_Image.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\IO\\Nav_File.cpp.obj", "Nav\\Source\\IO\\Nav_File.cpp"],
+  "file": "Nav\\Source\\IO\\Nav_File.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Net\\Win32\\Win32_Nav_Socket.cpp.obj", "Nav\\Source\\Net\\Win32\\Win32_Nav_Socket.cpp"],
+  "file": "Nav\\Source\\Net\\Win32\\Win32_Nav_Socket.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Graphic\\Api\\D3D11\\Context\\Win32\\Win32_Nav_D3D11_Context.cpp.obj", "Nav\\Source\\Graphic\\Api\\D3D11\\Context\\Win32\\Win32_Nav_D3D11_Context.cpp"],
+  "file": "Nav\\Source\\Graphic\\Api\\D3D11\\Context\\Win32\\Win32_Nav_D3D11_Context.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Graphic\\Api\\OpenGL\\Context\\Win32\\Win32_Nav_OpenGL_Context.cpp.obj", "Nav\\Source\\Graphic\\Api\\OpenGL\\Context\\Win32\\Win32_Nav_OpenGL_Context.cpp"],
+  "file": "Nav\\Source\\Graphic\\Api\\OpenGL\\Context\\Win32\\Win32_Nav_OpenGL_Context.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\UI\\Console\\Win32\\Win32_Nav_Console.cpp.obj", "Nav\\Source\\UI\\Console\\Win32\\Win32_Nav_Console.cpp"],
   "file": "Nav\\Source\\UI\\Console\\Win32\\Win32_Nav_Console.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\UI\\Window\\Win32\\Win32_Nav_Window.cpp.obj", "Nav\\Source\\UI\\Window\\Win32\\Win32_Nav_Window.cpp"],
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\UI\\Window\\Win32\\Win32_Nav_Window.cpp.obj", "Nav\\Source\\UI\\Window\\Win32\\Win32_Nav_Window.cpp"],
   "file": "Nav\\Source\\UI\\Window\\Win32\\Win32_Nav_Window.cpp"
 },
 {
   "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
-  "arguments": ["clang-cl.exe", "-c", "-m64", "-std:c++17", "-INav\\Header", "-INav\\Deps", "-DNAV_BUILD_OS_WINDOWS", "-DNAV_BUILD_PLATFORM_MINGW", "-DNAV_BUILD_THREAD_WIN32", "-DNAV_BUILD_THREAD_POSIX", "-Fobuild\\.objs\\nav\\mingw\\x86_64\\release\\Nav\\Source\\Graphic\\Win32\\Win32_Nav_Graphic_Context.cpp.obj", "Nav\\Source\\Graphic\\Win32\\Win32_Nav_Graphic_Context.cpp"],
-  "file": "Nav\\Source\\Graphic\\Win32\\Win32_Nav_Graphic_Context.cpp"
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Graphic\\Context\\Win32\\Win32_Nav_Graphic_Context.cpp.obj", "Nav\\Source\\Graphic\\Context\\Win32\\Win32_Nav_Graphic_Context.cpp"],
+  "file": "Nav\\Source\\Graphic\\Context\\Win32\\Win32_Nav_Graphic_Context.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Library\\Win32\\Win32_Library.cpp.obj", "Nav\\Source\\Library\\Win32\\Win32_Library.cpp"],
+  "file": "Nav\\Source\\Library\\Win32\\Win32_Library.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.Nav.pdb", "/Od", "/std:c++17", "/INav\\Header", "/INav\\Deps", "/IC:\\Program Files (x86)\\OpenAL 1.1 SDK\\include", "/DNAV_API_EXPORT", "/DNAV_BUILD_MODE_DEBUG", "/DNAV_BUILD_OS_WINDOWS", "/DNAV_BUILD_PLATFORM_WINDOWS", "/DNAV_BUILD_THREAD_WIN32", "/DNAV_BUILD_GRAPHIC_API_D3D11", "/DNAV_BUILD_GRAPHIC_API_OPENGL", "/Fobuild\\.objs\\nav\\windows\\x64\\debug\\Nav\\Source\\Audio\\OpenAL\\Win32\\Win32_Nav_OpenAL_Context.cpp.obj", "Nav\\Source\\Audio\\OpenAL\\Win32\\Win32_Nav_OpenAL_Context.cpp"],
+  "file": "Nav\\Source\\Audio\\OpenAL\\Win32\\Win32_Nav_OpenAL_Context.cpp"
+},
+{
+  "directory": "c:\\Users\\crist\\Documents\\_projects\\Nav",
+  "arguments": ["D:\\ExtApps\\VisualStudio\\2022\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe", "/c", "/EHsc", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\compile.launcher.pdb", "/Od", "/std:c++17", "/INav\\Deps", "/INav\\Header", "/DNAV_BUILD_MODE_DEBUG", "/Fobuild\\.objs\\launcher\\windows\\x64\\debug\\Launcher\\Source\\Nav_Launcher.cpp.obj", "Launcher\\Source\\Nav_Launcher.cpp"],
+  "file": "Launcher\\Source\\Nav_Launcher.cpp"
 }]

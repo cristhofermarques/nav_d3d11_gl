@@ -2,7 +2,7 @@
 #define __NAV_THREAD_HPP__
 
 #include <Api/Nav_Api.hpp>
-#include <Type/Nav_Value_Type.hpp>
+#include "Nav_Type.hpp"
 #include <Thread/Posix/Nav_Posix_Thread.hpp>
 #include <Thread/Win32/Nav_Win32_Thread.hpp>
 

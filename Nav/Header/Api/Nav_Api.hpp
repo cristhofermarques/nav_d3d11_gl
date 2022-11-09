@@ -3,31 +3,19 @@
 
 #ifdef NAV_API_EXPORT
 
-#ifdef NAV_BUILD_PLATFORM_MINGW
-
-#ifdef NAV_API_INTERNAL_IMPORT
-
-#define NAV_API
-
-#else
-
-#define NAV_API __declspec(dllexport)
-
-#endif
-
-#endif
+    #define NAV_API __declspec(dllexport)
 
 #else 
 
-#ifdef NAV_API_INTERNAL_IMPORT
+    #ifdef NAV_BUILD_PLATFORM_MINGW
 
-#define NAV_API
+        #define NAV_API
 
-#else
+    #else
 
-#define NAV_API __declspec(dllimport)
+        #define NAV_API __declspec(dllimport)
 
-#endif
+    #endif
 
 #endif
 

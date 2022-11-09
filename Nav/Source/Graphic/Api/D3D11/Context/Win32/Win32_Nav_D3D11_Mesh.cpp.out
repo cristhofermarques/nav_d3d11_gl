@@ -1,0 +1,58 @@
+#include <Graphic/D3D11/Nav_D3D11_Mesh.hpp>
+#include <Graphic/D3D11/Win32/Win32_Nav_D3D11_Mesh_Platform_Part.hpp>
+#include <Graphic/D3D11/Win32/Win32_Nav_D3D11_Context_Platform_Part.hpp>
+
+Bool D3D11Mesh::Create(Vertex* verts, Size vertCount, UInt16* idxs, Size idxCount, D3D11Context::PlatformPart* ctxPlatPart, D3D11Mesh* mesh, D3D11_USAGE usage, UInt32 cpuAccessFlags, UInt32 miscFlags)
+{
+    GET_PLATFORM_PART(mesh, D3D11Mesh, False);
+
+    D3D11_BUFFER_DESC vertBuffDesc = NullStruct;
+    vertBuffDesc.Usage = usage;
+    vertBuffDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+    vertBuffDesc.CPUAccessFlags = cpuAccessFlags;
+    vertBuffDesc.MiscFlags = miscFlags;
+    vertBuffDesc.StructureByteStride = VERTEX_STRIDE;
+    vertBuffDesc.ByteWidth = VERTEX_STRIDE * vertCount;
+
+    D3D11_SUBRESOURCE_DATA vertSubResData = NullStruct;
+    vertSubResData.pSysMem = verts;
+
+    ID3D11Buffer* vertexBuffer = NullPtr;
+    if(FAILED(ctxPlatPart->d3d11Device->CreateBuffer(&vertBuffDesc, &vertSubResData, &vertexBuffer))){return False;}
+
+    D3D11_BUFFER_DESC idxBuffDesc = NullStruct;
+    idxBuffDesc.Usage = usage;
+    idxBuffDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
+    idxBuffDesc.CPUAccessFlags = cpuAccessFlags;
+    idxBuffDesc.MiscFlags = miscFlags;
+    idxBuffDesc.StructureByteStride = sizeof(UInt16);
+    idxBuffDesc.ByteWidth = sizeof(UInt16) * idxCount;
+
+    D3D11_SUBRESOURCE_DATA idxSubResData = NullStruct;
+    vertSubResData.pSysMem = idxs;
+
+    ID3D11Buffer* indexBuffer = NullPtr;
+    if(FAILED(ctxPlatPart->d3d11Device->CreateBuffer(&idxBuffDesc, &idxSubResData, &indexBuffer)))
+    {
+        vertexBuffer->Release();
+        return False;
+    }
+
+    mesh->_vertexCount = vertCount;
+    mesh->_indexCount = idxCount;
+
+    meshPlatPart->vertexBuffer = vertexBuffer;
+    meshPlatPart->indexBuffer = indexBuffer;
+
+    return True;
+}
+
+Bool D3D11Mesh::Destroy(D3D11Mesh* mesh)
+{
+    GET_PLATFORM_PART(mesh, D3D11Mesh, False);
+
+    RELEASE(meshPlatPart->indexBuffer);
+    RELEASE(meshPlatPart->vertexBuffer);
+
+    return True;
+}
